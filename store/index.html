@@ -2,12 +2,221 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel = "stylesheet" type = "text/css" src = "css/normalize.css" />
-    <link rel = "stylesheet" type = "text/css" src = "css/styles.css" />
+    <!-- Import CSS -->
+    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/styles.css" />
+
+    <!-- Import fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Import JS -->
     <script src = "js/script.js" defer></script>
+
+    <!-- Window Title -->
     <title>The One Store</title>
   </head>
-  <body>
 
+  <body>
+    <div class = "container">
+      <header>
+        <h1>The One Store</h1>
+        <h2>The only store you really need</h2>
+      </header>
+
+      <div class = "pageContent">
+        <main>
+          <div class = "storefront" >
+            <div class = "sectionHeader">
+              <div class = "sectionHeading">
+                <h3>Categories</h3>
+              </div>
+              <div class = "categoryNames">
+                <button id = "catFood">
+                  Cat Food
+                </button>
+                <button id = "jerky">
+                  Jerky
+                </button>
+                <button id = "tomatoes">
+                  Tomatoes
+                </button>
+              </div>
+            </div>
+            <div class = "itemList" id="catFoodList">
+              <div class = "itemRow">
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img src = "images/meowmix.jpeg" alt = "Meow Mix"/>
+                  </div>             <p>
+                    Meow Mix
+                   </p>
+                </div>
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img src = "images/purina.jpeg" alt = "Purina Cat Chow"/>
+                  </div>              <p>
+                      Purina Cat Chow
+                    </p>
+                </div>
+              </div>
+              <div class = "itemRow">
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img src =  "images/nutrisource.jpeg" alt = "Nutri-Source cat food"/>
+                  </div>              <p>
+                      Nutri-Source
+                    </p>
+                </div>
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img src =  "images/naturalbalance.jpeg" alt = "Natural Balance cat food" />
+                  </div>              <p>
+                      Natural Balance
+                    </p>
+                </div>
+              </div>
+              <div class = "itemRow">
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img <img src =  "images/hillssciencediet.jpeg" alt = "Hill's Science Diet cat food"/>
+                  </div>              <p>
+                      Hill's Science Diet
+                    </p>
+                </div>
+              </div>
+            </div>
+          <div class = "itemList" id="jerkyList">
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src =  "images/eggplantjerky.jpeg" alt = "Delicious eggplant jerky" />
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Eggplant Jerky
+                  </p>
+                </div>
+              </div>
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/beefjerky.jpeg" alt = "Delicious beef jerky"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Beef Jerky
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                    <img src = "images/turkeyjerky.jpeg" alt = "Delicious turkey jerky"/>
+                </div>
+                <div class = "itemName">
+                </div>               <p>
+                    Turkey Jerky
+                  </p>
+                </div>
+                <div class = "item">
+                  <div class = "itemImage">
+                    <img src = "images/fishjerky.jpeg" alt = "Delicious fish jerky"/>
+                  </div>
+                  <div class = "itemName">
+                    <p>
+                    Fish Jerky
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                    <img src = "images/alligatorjerky.jpeg" alt = "Delicious alligator jerky"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Alligator Jerky
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "itemList" id="tomatoList">
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/greenzebra.jpeg" alt = "Ripe Green Zebra tomatoes"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Green Zebra Tomatoes
+                  </p>
+                </div>
+              </div>
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/brandywine.jpeg" alt = "Ripe Brandywine tomatoes"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Brandywine Tomatoes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/roma.jpeg" alt = "Ripe Roma tomatoes"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Roma Tomatoes
+                  </p>
+                </div>
+              </div>
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/cherokeepurple.jpeg" alt = "Ripe Cherokee Purple tomatoes"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Cherokee Purple Tomatoes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class = "itemRow">
+              <div class = "item">
+                <div class = "itemImage">
+                  <img src = "images/goldenjubilee.jpeg" alt = "Ripe Golden Jubilee tomatoes"/>
+                </div>
+                <div class = "itemName">
+                  <p>
+                    Golden Jubilee Tomatoes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside>
+          <div class = "shoppingListSection">
+            <div class = "sectionHeader">
+              <div class = "sectionHeading">
+                <h3>Shopping List</h3>
+              </div>
+            </div>
+            <div class="shoppingListItems">
+              <ul id = "shoppingList">
+                <!-- list items added dynamically -->
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
   </body>
 </html>

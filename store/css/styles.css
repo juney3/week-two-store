@@ -1,3 +1,145 @@
+/* Document-wide styles */
 * {
   box-sizing: border-box;
 }
+
+header, .sectionHeader, button{
+  background-color: #3A3948;
+}
+
+h1, h2, h3, button {
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header  section */
+header {
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: .2em;
+}
+
+h2 {
+  letter-spacing: .1em;
+}
+
+/* Page content styles */
+.pageContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.sectionHeader {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionHeading {
+  margin-top: 1.5em;
+}
+
+.sectionHeading h3 {
+  margin-top: 0;
+}
+
+main, aside {
+  background-color: #EFEFF1;
+  width: 48%;
+}
+
+/* Store section */
+.categoryNames {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 33%;
+  height: 2em;
+  line-height: 2.2em;
+  background-color: inherit;
+  border: none;
+  margin: 1em 0 0;
+}
+
+button:focus {
+  width: 33%;
+  background-color: #B0AFBB;
+  outline: none;
+}
+
+.storefront {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemList {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 47%;
+  margin-top: .8em;
+  background-color: #FFFFFF;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-top: .5em;
+}
+
+.itemName {
+  width: 100%;
+}
+
+.itemName p {
+  text-align: center;
+}
+
+/* Define visibility classes */
+.isVisible {
+  display: flex;
+}
+
+.isHidden {
+  display: none;
+}
+
+/* Shopping list section */

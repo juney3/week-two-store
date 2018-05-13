@@ -24,17 +24,13 @@ function showCategory() {
 // define function to add item to shopping list
 
 function addItem() {
+  var shoppingList = document.getElementById('shoppingList');
+  
   var itemName = this.getElementsByTagName('p')[0].innerText;
-
-  console.log(this.getElementsByTagName('p'));
 
   var itemToAdd = document.createElement('li');
 
   itemToAdd.textContent = itemName;
-
-  console.log(itemToAdd);
-
-  var shoppingList = document.getElementById('shoppingList');
 
   shoppingList.appendChild(itemToAdd);
 

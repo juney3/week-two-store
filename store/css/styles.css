@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-header, .sectionHeader, button{
+header, .paneHeader, button{
   background-color: #3A3948;
 }
 
@@ -42,7 +42,11 @@ h2 {
   margin-top: 3em;
 }
 
-.sectionHeader {
+.pane {
+  margin-bottom: 2em;
+}
+
+.paneHeader {
   width: 100%;
   height: 7em;
   display: flex;
@@ -51,20 +55,29 @@ h2 {
   align-items: center;
 }
 
-.sectionHeading {
+.paneHeading {
   margin-top: 1.5em;
 }
 
-.sectionHeading h3 {
+.paneHeading h3 {
   margin-top: 0;
 }
 
 main, aside {
   background-color: #EFEFF1;
   width: 48%;
+  margin-bottom: 5em;
 }
 
 /* Store section */
+.storefront {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .categoryNames {
   width: 100%;
   display: flex;
@@ -85,14 +98,6 @@ button:focus {
   width: 33%;
   background-color: #B0AFBB;
   outline: none;
-}
-
-.storefront {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .itemList {
@@ -134,7 +139,7 @@ button:focus {
 }
 
 /* Define visibility classes */
-.isVisible {
+.isShown {
   display: flex;
 }
 

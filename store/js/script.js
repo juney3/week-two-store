@@ -23,6 +23,7 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 //define functions to display the item category
+// TODO: Refactor code to make less repetitive - create functions
 function showCategory() {
   if (this.id === 'catFood') {
     categories[0].className = "itemList isShown";
@@ -53,10 +54,10 @@ function defaultView() {
 
 // add event listeners to all items
   for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener('click', addItem);
+    items[i].addEventListener('click', getItemData);
   }
 
-  //function addToShoppingCart to keep track of quantities - an experiemnt
+  //function addToShoppingCart to keep track of itme - an experiemnt
   function addToShoppingCart(itemName, category, price) {
     if (!shoppingCart[itemName]) {
       shoppingCart[itemName] = new ShoppingCartItem(category, price);
@@ -64,27 +65,38 @@ function defaultView() {
     else if (shoppingCart[itemName]) {
       shoppingCart[itemName].quantity++;
     }
+
+    addItemToList(itemName, category, price);
+
+    console.log(shoppingCart);
   };
 
-// define function to add item to shopping list
-function addItem() {
-  var shoppingList = document.getElementById('shoppingList');
-
+// Get item data
+// TODO: function for handling item data
+function getItemData() {
   itemName = this.getElementsByTagName('p')[0].innerText;
 
   category = this.parentNode.parentNode.id;
 
-  price =
+  priceString =
   this.getElementsByTagName('p')[1].innerText;
+
+  price = Number(priceString.substr(1));
+
+  addToShoppingCart(itemName, category, price);
+}
+
+// define function to add item to shopping list
+function addItemToList() {
+  var shoppingList = document.getElementById('shoppingList');
 
   var itemToAdd = document.createElement('li');
 
-  itemToAdd.textContent = itemName + ' - ' + price;
+  itemToAdd.textContent = itemName + ' - $' + price;
 
   shoppingList.appendChild(itemToAdd);
 
-//experiment to see if I can create a shopping cart object
-  addToShoppingCart(itemName, category, price);
+  console.log(itemToAdd);
 };
 
 
